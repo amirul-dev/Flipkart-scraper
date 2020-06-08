@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flipkart Scraper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</head>
+
+<body>
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-8">
+                    <div class="wellcome-heading" style="margin-bottom:10px">
+                        <h2>Flipkart Scraper</h2>
+                        <h3></h3>
+                        <p>Select the category you need to search for: </p>
+                        <input id ="laptop" type="image" alt="laptop" class="selection" src = "img/laptop.jpg" onclick="laptop()">
+                        <input id ="camera" type="image" alt="camera" class="selection" src = "img/camera.jpg" onclick="camera()">
+                        <input id ="mobile" type="image" alt="mobile" class="selection" src = "img/mobile.jpg" onclick="mobile()">
+                        <p style="margin-top:20px">Enter the maximum amount you can spend. Sit back and relax. We will search for you!</p>
+                    </div>
+                    <div class="get-start-area">
+                        <form class="form-inline">
+                            <input type="text" id="max_price" class="form-control email" style = "margin-right: 10px" placeholder="Max price">
+                            <input type="text" id="email" class="form-control email" placeholder="Email">
+                            <input type="button" class="submit" value="Send Email" onclick="sendemail()">
+                        </form>
+                        <p id="message" style ="color: #fff; padding-left:460px; padding-bottom:0px"></p>
+                        <p style="color:#fff" >For comparative graphs, first save as csv file</p>
+                        <input style="margin-top:10px"type="button" class="submit" value="Save as csv file" onclick="save()">
+                        <p id="message2" style ="color: black; padding-top:10px; padding-left:30px; display:inline-block"></p>
+                    </div>
+                </div>
+                <div class="col-md-4 bar">
+                    <center>
+                    <p style="color:#fff; display:none" id="bar_para">Comparison of top 10 items</p>
+                    <input style="margin-top:10px" type="button" class="submit" id="bar1" value="Compare price" onclick="pricebar()">
+                    <input style="margin-top:10px" type="button" class="submit" id="bar2" value="Compare rating" onclick="ratingbar()">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="welcome-thumb">
+        </div>
+    </section>
+</body>
+</html>
