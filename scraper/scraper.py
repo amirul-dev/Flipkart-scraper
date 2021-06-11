@@ -144,7 +144,7 @@ def sendemail(max_price,email):
 		return alls
 	def send_mail(all_item):
 		server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-		server.login('amiruldev1@gmail.com', 'wikkhfxybndhwhkg')
+		server.login('email', 'password')
 		global category1
 		global URL
 		URL += '1'
